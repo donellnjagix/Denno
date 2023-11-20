@@ -1,5 +1,5 @@
 "use client"
-import { useState } from 'react';
+import React, { useState } from 'react';
 import Navbar from '../app/components/navbar/Navbar';
 
 const Home: React.FC = () => {
@@ -7,6 +7,10 @@ const Home: React.FC = () => {
   const [savingsAccountBalance, setSavingsAccountBalance] = useState(50000);
   const [depositedMoney, setDepositedMoney] = useState(10000);
   const [withdrawnMoney, setWithdrawnMoney] = useState(10000);
+
+  // Additional states for loan-related information
+  const [loanLimit, setLoanLimit] = useState(50000);
+  const [loanTaken, setLoanTaken] = useState(20000);
 
   return (
     <div>
@@ -47,6 +51,25 @@ const Home: React.FC = () => {
             </h2>
             <p className="text-2xl" style={{ color: '#5C9C8C' }}>
               ${withdrawnMoney.toLocaleString('en-US')}
+            </p>
+          </div>
+
+          {/* New Cards for Loan Information */}
+          <div className="bg-MauiBlue rounded-lg p-4 shadow">
+            <h2 className="text-xl font-bold mb-2" style={{ color: '#4CA4B4' }}>
+              Loan Limit
+            </h2>
+            <p className="text-2xl" style={{ color: '#5C9C8C' }}>
+              ${loanLimit.toLocaleString('en-US')}
+            </p>
+          </div>
+
+          <div className="bg-TealBayou rounded-lg p-4 shadow">
+            <h2 className="text-xl font-bold mb-2" style={{ color: '#58A2A3' }}>
+              Loan Taken
+            </h2>
+            <p className="text-2xl" style={{ color: '#5C9C8C' }}>
+              ${loanTaken.toLocaleString('en-US')}
             </p>
           </div>
         </div>

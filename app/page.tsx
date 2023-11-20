@@ -1,4 +1,3 @@
-"use client"
 import React, { useState } from 'react';
 import Navbar from '../app/components/navbar/Navbar';
 
@@ -20,7 +19,8 @@ const Home: React.FC = () => {
         <h1 className="text-center text-3xl mt-4 mb-8" style={{ color: '#5C9C8C' }}>
           Dashboard
         </h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {/* First Row */}
           <div className="bg-SeaportSteam rounded-lg p-4 shadow">
             <h2 className="text-xl font-bold mb-2" style={{ color: '#40847C' }}>
               Current Account Balance
@@ -45,6 +45,8 @@ const Home: React.FC = () => {
               ${depositedMoney.toLocaleString('en-US')}
             </p>
           </div>
+
+          {/* Second Row */}
           <div className="bg-GreyTeal rounded-lg p-4 shadow">
             <h2 className="text-xl font-bold mb-2" style={{ color: '#5C9C8C' }}>
               Withdrawn Money
@@ -53,8 +55,6 @@ const Home: React.FC = () => {
               ${withdrawnMoney.toLocaleString('en-US')}
             </p>
           </div>
-
-          {/* New Cards for Loan Information */}
           <div className="bg-MauiBlue rounded-lg p-4 shadow">
             <h2 className="text-xl font-bold mb-2" style={{ color: '#4CA4B4' }}>
               Loan Limit
@@ -63,7 +63,6 @@ const Home: React.FC = () => {
               ${loanLimit.toLocaleString('en-US')}
             </p>
           </div>
-
           <div className="bg-TealBayou rounded-lg p-4 shadow">
             <h2 className="text-xl font-bold mb-2" style={{ color: '#58A2A3' }}>
               Loan Taken

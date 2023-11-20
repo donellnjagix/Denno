@@ -9,16 +9,16 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <div className="navbar-container" style={{ display: 'flex', justifyContent: 'center', backgroundColor: '#3C8474', color: '#A3D5CA' }}>
+    <div className="navbar-container" style={{ display: 'flex', justifyContent: 'center', backgroundColor: '#3C8474', color: '#ECF4FC' }}>
       <div className="navbar" style={{ display: 'flex', alignItems: 'center', maxWidth: '600px', width: '100%' }}>
-        <button className="navbar-toggle" onClick={handleNavbarCollapse} style={{ borderColor: '#5C9C8C' }}>
+        <button className="navbar-toggle" onClick={handleNavbarCollapse} style={{ borderColor: '#5C9C8C', color: '#ECF4FC' }}>
           <span className="navbar-toggle-icon"></span>
         </button>
         <div className={`navbar-collapse ${isNavbarCollapsed ? 'collapsed' : ''}`} style={{ backgroundColor: '#ACCCC4', marginLeft: '10px' }}>
           <div className="navbar-user">
             <img
               className="navbar-user-image"
-              src="public\vercel.svg"
+              src="/vercel.svg"
               alt="Profile Picture"
               style={{ borderRadius: '50%', border: '2px solid #40847C' }}
             />

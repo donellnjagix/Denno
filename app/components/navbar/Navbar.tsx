@@ -15,17 +15,10 @@ const Navbar: React.FC = () => {
           <span className="navbar-toggle-icon"></span>
         </button>
         <div className={`navbar-collapse ${isNavbarCollapsed ? 'collapsed' : ''}`} style={{ backgroundColor: '#ACCCC4', marginLeft: '10px' }}>
-          <div className="navbar-user">
-            <img
-              className="navbar-user-image"
-              src="/vercel.svg"
-              alt="Profile Picture"
-              style={{ borderRadius: '50%', border: '2px solid #40847C' }}
-            />
-            <p className="navbar-user-name" style={{ color: '#295B50', marginLeft: '5px' }}>
-              John Doe
-            </p>
-          </div>
+          {/* Removed the profile picture section */}
+          <p className="navbar-user-name" style={{ color: '#295B50', marginLeft: '5px' }}>
+            John Doe
+          </p>
           <Link href="/home">
             <span style={{ color: '#5C9C8C', margin: '5px' }}>Home</span>
           </Link>

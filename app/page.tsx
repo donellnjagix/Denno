@@ -104,31 +104,61 @@ const Home: React.FC = () => {
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {/* First Row */}
-          <div style={{ backgroundColor: '#FFFFFF' }} className="rounded-lg p-4 shadow">
-            {/* Existing content */}
+          <div className="bg-SeaportSteam rounded-lg p-4 shadow">
+          <h2 className="text-xl font-bold mb-2" style={{ color: '#295B50' }}>
+              Current Account Balance
+            </h2>
+            <p className="text-2xl" style={{ color: '#5C9C8C' }}>
+              ${currentAccountBalance.toLocaleString('en-US')}
+            </p>
           </div>
-          <div style={{ backgroundColor: '#FFFFFF' }} className="rounded-lg p-4 shadow">
-            {/* Existing content */}
+          <div className="bg-YuccaCream rounded-lg p-4 shadow">
+            <h2 className="text-xl font-bold mb-2" style={{ color: '#295B50' }}>
+              Savings Account Balance
+            </h2>
+            <p className="text-2xl" style={{ color: '#5C9C8C' }}>
+              ${savingsAccountBalance.toLocaleString('en-US')}
+            </p>
           </div>
-          <div style={{ backgroundColor: '#FFFFFF' }} className="rounded-lg p-4 shadow">
-            {/* Existing content */}
+          <div className="bg-OldMoney rounded-lg p-4 shadow">
+          <h2 className="text-xl font-bold mb-2" style={{ color: '#295B50' }}>
+              Deposited Money
+            </h2>
+            <p className="text-2xl" style={{ color: '#5C9C8C' }}>
+              ${depositedMoney.toLocaleString('en-US')}
+            </p>
           </div>
 
           {/* Second Row */}
-          <div style={{ backgroundColor: '#FFFFFF' }} className="rounded-lg p-4 shadow">
-            {/* Existing content */}
+          <div className="bg-GreyTeal rounded-lg p-4 shadow">
+          <h2 className="text-xl font-bold mb-2" style={{ color: '#295B50' }}>
+              Withdrawn Money
+            </h2>
+            <p className="text-2xl" style={{ color: '#5C9C8C' }}>
+              ${withdrawnMoney.toLocaleString('en-US')}
+            </p>
           </div>
-          <div style={{ backgroundColor: '#FFFFFF' }} className="rounded-lg p-4 shadow">
-            {/* Existing content */}
+          <div className="bg-MauiBlue rounded-lg p-4 shadow">
+          <h2 className="text-xl font-bold mb-2" style={{ color: '#295B50' }}>
+              Loan Limit
+            </h2>
+            <p className="text-2xl" style={{ color: '#5C9C8C' }}>
+              ${loanLimit.toLocaleString('en-US')}
+            </p>
           </div>
-          <div style={{ backgroundColor: '#FFFFFF' }} className="rounded-lg p-4 shadow">
-            {/* Existing content */}
+          <div className="bg-TealBayou rounded-lg p-4 shadow">
+          <h2 className="text-xl font-bold mb-2" style={{ color: '#295B50' }}>
+              Loan Taken
+            </h2>
+            <p className="text-2xl" style={{ color: '#5C9C8C' }}>
+              ${loanTaken.toLocaleString('en-US')}
+            </p>
           </div>
         </div>
 
         {/* Recent Transactions Table */}
         <div className="mt-8">
-          <h2 className="text-xl font-bold mb-2" style={{ color: '#295B50' }}>
+        <h2 className="text-xl font-bold mb-2" style={{ color: '#295B50' }}>
             Recent Transactions
           </h2>
           <TransactionTable transactions={transactions} />

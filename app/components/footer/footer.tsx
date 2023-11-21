@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
               {/* Use Next.js Image component for optimized image loading */}
               <Image src={logo} alt="Flowbite Logo" width={32} height={32} />
               <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-                Flowbite
+                Normanstone Bank
               </span>
             </a>
           </Link>

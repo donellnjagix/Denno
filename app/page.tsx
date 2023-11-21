@@ -105,7 +105,7 @@ const Home: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {/* First Row */}
           <div className="bg-SeaportSteam rounded-lg p-4 shadow">
-            <h2 className="text-xl font-bold mb-2" style={{ color: '#40847C' }}>
+          <h2 className="text-xl font-bold mb-2" style={{ color: '#295B50' }}>
               Current Account Balance
             </h2>
             <p className="text-2xl" style={{ color: '#5C9C8C' }}>
@@ -121,7 +121,7 @@ const Home: React.FC = () => {
             </p>
           </div>
           <div className="bg-OldMoney rounded-lg p-4 shadow">
-            <h2 className="text-xl font-bold mb-2" style={{ color: '#5C9C8C' }}>
+          <h2 className="text-xl font-bold mb-2" style={{ color: '#295B50' }}>
               Deposited Money
             </h2>
             <p className="text-2xl" style={{ color: '#5C9C8C' }}>
@@ -131,7 +131,7 @@ const Home: React.FC = () => {
 
           {/* Second Row */}
           <div className="bg-GreyTeal rounded-lg p-4 shadow">
-            <h2 className="text-xl font-bold mb-2" style={{ color: '#5C9C8C' }}>
+          <h2 className="text-xl font-bold mb-2" style={{ color: '#295B50' }}>
               Withdrawn Money
             </h2>
             <p className="text-2xl" style={{ color: '#5C9C8C' }}>
@@ -139,7 +139,7 @@ const Home: React.FC = () => {
             </p>
           </div>
           <div className="bg-MauiBlue rounded-lg p-4 shadow">
-            <h2 className="text-xl font-bold mb-2" style={{ color: '#5C9C8C' }}>
+          <h2 className="text-xl font-bold mb-2" style={{ color: '#295B50' }}>
               Loan Limit
             </h2>
             <p className="text-2xl" style={{ color: '#5C9C8C' }}>
@@ -147,7 +147,7 @@ const Home: React.FC = () => {
             </p>
           </div>
           <div className="bg-TealBayou rounded-lg p-4 shadow">
-            <h2 className="text-xl font-bold mb-2" style={{ color: '#5C9C8C' }}>
+          <h2 className="text-xl font-bold mb-2" style={{ color: '#295B50' }}>
               Loan Taken
             </h2>
             <p className="text-2xl" style={{ color: '#5C9C8C' }}>
@@ -158,7 +158,7 @@ const Home: React.FC = () => {
 
         {/* Recent Transactions Table */}
         <div className="mt-8">
-          <h2 className="text-xl font-bold mb-2" style={{ color: '#5C9C8C' }}>
+        <h2 className="text-xl font-bold mb-2" style={{ color: '#295B50' }}>
             Recent Transactions
           </h2>
           <TransactionTable transactions={transactions} />

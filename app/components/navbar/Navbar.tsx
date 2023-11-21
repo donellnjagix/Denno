@@ -28,16 +28,16 @@ const Navbar: React.FC = () => {
         {/* Links */}
         <div className="flex gap-4">
           <Link href="/" passHref>
-            <p className="transition duration-300 text-base hover:text-accent-orange cursor-pointer">Home</p>
+            <p className="transition duration-300 text-base hover:text-accent-orange cursor-pointer">Dashboard</p>
           </Link>
           <Link href="#properties" passHref>
-            <a className="transition duration-300 text-base hover:text-accent-orange cursor-pointer">Properties</a>
+            <a className="transition duration-300 text-base hover:text-accent-orange cursor-pointer">Accounts</a>
           </Link>
           <Link href="#design" passHref>
-            <a className="transition duration-300 text-base hover:text-accent-orange cursor-pointer">Design</a>
+            <a className="transition duration-300 text-base hover:text-accent-orange cursor-pointer">Transactions</a>
           </Link>
           <Link href="#contactus" passHref>
-            <a className="transition duration-300 text-base hover:text-accent-orange cursor-pointer">Contact</a>
+            <a className="transition duration-300 text-base hover:text-accent-orange cursor-pointer">Payments </a>
           </Link>
         </div>
       </div>

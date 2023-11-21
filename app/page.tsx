@@ -129,7 +129,7 @@ const Home: React.FC = () => {
         {/* Recent Transactions Table */}
         <div className="mt-8">
           <h2 className="text-xl font-bold mb-2" style={{ color: '#295B50' }}>
-            Recent Transaction
+            Recent Transactions
           </h2>
           <TransactionTable transactions={transactions} />
         </div>

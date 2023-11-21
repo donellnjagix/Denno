@@ -139,7 +139,7 @@ const Home: React.FC = () => {
             </p>
           </div>
           <div className="bg-MauiBlue rounded-lg p-4 shadow">
-            <h2 className="text-xl font-bold mb-2" style={{ color: '#4CA4B4' }}>
+            <h2 className="text-xl font-bold mb-2" style={{ color: '#5C9C8C' }}>
               Loan Limit
             </h2>
             <p className="text-2xl" style={{ color: '#5C9C8C' }}>
@@ -147,7 +147,7 @@ const Home: React.FC = () => {
             </p>
           </div>
           <div className="bg-TealBayou rounded-lg p-4 shadow">
-            <h2 className="text-xl font-bold mb-2" style={{ color: '#58A2A3' }}>
+            <h2 className="text-xl font-bold mb-2" style={{ color: '#5C9C8C' }}>
               Loan Taken
             </h2>
             <p className="text-2xl" style={{ color: '#5C9C8C' }}>

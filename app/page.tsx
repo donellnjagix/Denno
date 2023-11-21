@@ -2,6 +2,8 @@
 import React, { useState } from 'react';
 import Navbar from '../app/components/navbar/Navbar';
 import TransactionTable from './TransactionTable'; // Adjust the import path based on your actual file structure
+import Footer from '../app/components/footer/footer';
+
 
 interface Transaction {
   id: string;
@@ -31,6 +33,64 @@ const Home: React.FC = () => {
       amount: 1000,
       status: 'completed',
     },
+
+    {
+      id: '2',
+      date: new Date(),
+      type: 'deposit',
+      amount: 1000,
+      status: 'completed',
+    },
+
+    {
+      id: '3',
+      date: new Date(),
+      type: 'deposit',
+      amount: 1000,
+      status: 'completed',
+    },
+
+    {
+      id: '4',
+      date: new Date(),
+      type: 'deposit',
+      amount: 1000,
+      status: 'completed',
+    },
+
+    {
+      id: '5',
+      date: new Date(),
+      type: 'deposit',
+      amount: 1000,
+      status: 'completed',
+    },
+
+    {
+      id: '6',
+      date: new Date(),
+      type: 'deposit',
+      amount: 1000,
+      status: 'completed',
+    },
+
+    {
+      id: '7',
+      date: new Date(),
+      type: 'deposit',
+      amount: 1000,
+      status: 'completed',
+    },
+
+    {
+      id: '8',
+      date: new Date(),
+      type: 'deposit',
+      amount: 8000,
+      status: 'completed',
+    },
+
+
     // Add more transactions as needed...
   ]);
 
@@ -104,6 +164,8 @@ const Home: React.FC = () => {
           <TransactionTable transactions={transactions} />
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 };

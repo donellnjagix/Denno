@@ -1,8 +1,18 @@
 "use client"
 import React, { useState } from 'react';
 import Navbar from '../app/components/navbar/Navbar';
+import TransactionTable from './TransactionTable'; // Adjust the import path based on your actual file structure
+
+interface Transaction {
+  id: string;
+  date: Date;
+  type: 'deposit' | 'withdrawal' | 'transfer' | 'other';
+  amount: number;
+  status: 'pending' | 'completed' | 'failed';
+}
 
 const Home: React.FC = () => {
+  // Your existing state variables...
   const [currentAccountBalance, setCurrentAccountBalance] = useState(80040);
   const [savingsAccountBalance, setSavingsAccountBalance] = useState(50000);
   const [depositedMoney, setDepositedMoney] = useState(10000);
@@ -11,6 +21,18 @@ const Home: React.FC = () => {
   // Additional states for loan-related information
   const [loanLimit, setLoanLimit] = useState(50000);
   const [loanTaken, setLoanTaken] = useState(20000);
+
+  // Sample transaction data
+  const [transactions, setTransactions] = useState<Transaction[]>([
+    {
+      id: '1',
+      date: new Date(),
+      type: 'deposit',
+      amount: 1000,
+      status: 'completed',
+    },
+    // Add more transactions as needed...
+  ]);
 
   return (
     <div>
@@ -72,6 +94,14 @@ const Home: React.FC = () => {
               ${loanTaken.toLocaleString('en-US')}
             </p>
           </div>
+        </div>
+
+        {/* Recent Transactions Table */}
+        <div className="mt-8">
+          <h2 className="text-xl font-bold mb-2" style={{ color: '#5C9C8C' }}>
+            Recent Transactions
+          </h2>
+          <TransactionTable transactions={transactions} />
         </div>
       </div>
     </div>
